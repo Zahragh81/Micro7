@@ -1,5 +1,8 @@
 <?php
-#front controller
-include "vendor/autoload.php"; 
-// echo $_SERVER['REQUEST_URI'];
-new App\Core\Request();
+#front conroller
+use App\Core\StupidRouter;
+include "bootsrap/init.php";
+$router = new StupidRouter();
+$router->run();
+
+ 

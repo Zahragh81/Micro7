@@ -2,7 +2,11 @@
 
 namespace App\Middleware\Contract;
 
-interface GlobalMiddleware
+
+class GlobalMiddleware implements MiddlewareInterface
 {
-    public function handle();
+    public function handle()
+    {
+
+    }
 }

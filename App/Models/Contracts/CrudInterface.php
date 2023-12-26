@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models\Contracts;
-
+use Medoo\Medoo;
 interface CrudInterface
 {
     #create(insert)

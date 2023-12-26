@@ -7,6 +7,8 @@ use \App\Core\Request;
 use App\Middleware\Contract\GlobalMiddleware;
 
 
+
+
 class Router
 {
     private $request;
@@ -23,9 +25,9 @@ class Router
         $this->run_global_middlware();
         $this->run_route_middlware();
     }
-    private function run_global_middlware() 
+    private function run_global_middlware()
     {
-        $global_middleware = new GlobalMiddleware;
+        $global_middleware = new GlobalMiddleware();
         $global_middleware->handle();
     }
     private function run_route_middlware()

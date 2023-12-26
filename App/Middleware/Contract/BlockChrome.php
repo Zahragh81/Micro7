@@ -3,9 +3,9 @@
 namespace App\Middleware\Contract;
 
 use hisorange\BrowserDetect\Parser as Browser;
-use App\Middleware\Contract\GlobalMiddleware;
+use App\Middleware\Contract\MiddlewareInterface;
 
-class BlockChrome implements GlobalMiddleware
+class BlockChrome implements MiddlewareInterface
 {
     public function handle()
     {

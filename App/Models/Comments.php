@@ -4,9 +4,9 @@
 namespace App\Models;
 
 
-use App\Models\Contracts\JsonBaseModel;
+use App\Models\Contracts\mysqlBaseModel;
 
-class Comments extends JsonBaseModel
+class Comments extends mysqlBaseModel
 {
    protected $table = 'Comments';
 }

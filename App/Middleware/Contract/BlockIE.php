@@ -3,10 +3,10 @@
 namespace App\Middleware\Contract;
 
 use hisorange\BrowserDetect\Parser as Browser;
-use App\Middleware\Contract\GlobalMiddleware;
+use App\Middleware\Contract\MiddlewareInterface;
 
 
-class BlockIE implements GlobalMiddleware
+class BlockIE implements MiddlewareInterface
 {
   public function handle()
   {
